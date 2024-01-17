@@ -62,7 +62,7 @@ char *cleanLineContent(char *content);
 void pushHandler(stack_t **head, unsigned int line_number);
 void pallHandler(stack_t **head, unsigned int line_number);
 void pintHandler(stack_t **head, unsigned int line_number);
-int execInstruction(char *content, stack_t **head, unsigned int lineCounter,
+int executeInstruction(char *content, stack_t **head, unsigned int lineCounter,
 		FILE *file);
 void freeStack(stack_t *head);
 void popHandler(stack_t **head, unsigned int lineCounter);
